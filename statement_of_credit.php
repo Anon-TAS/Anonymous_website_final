@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Statement of Credits</title>
+    <link rel="icon" href="/~s2694679/Website/images/logo.png" type="image/png">
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -13,7 +14,10 @@
     </div>
 
     <h1>Statement of Credits</h1>
-    <h2>All references used to help in the creation of this website.</h2>
+    <h2>Majority of the references used to help in the creation of this website.</h2>
+    <div class="top-motifs">
+    <h3><u>All references used are within the scripts.</h3></u>
+    </div>
 
     <div class="top-motifs">
         <h2>Use of AI</h2>
@@ -66,7 +70,7 @@
             <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API">Concervation Analysis JS<</a> - How to use fetch to make an AJAX request, so analysis loads on same page.</li>
             <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Response/text">Concervation Analysis JS<</a> - Get the text returned from the PHP scruos and puts it in the results container.</li>
             <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch">Concervation Analysis JS<</a> - Page kept on failing so this allowed me to see the errors and display them.</li>
-            <b><li><a href="https://chatgpt.com/">AI</a> - Kept running into errors so used AI to find out how to display the error and disect it.</li></b>
+            <b><li><a href="https://chatgpt.com/">AI</a> - Kept running into errors so used it to help find out how to display the errors on the page so I can disect it.</li></b>
             <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Response/text">Concervation Analysis JS<</a> - Get the text returned from the PHP scruos and puts it in the results container.</li>
         </ul>
 

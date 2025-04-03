@@ -15,6 +15,7 @@ if (!isset($pdo)) {
 <head>
     <meta charset="UTF-8">
     <title>Fetched Sequences</title>
+    <link rel="icon" href="/~s2694679/Website/images/logo.png" type="image/png">
     <link rel="stylesheet" href="/~s2694679/Website/assets/style.css"> <!-- External style sheet!-->
 </head>
 <body>

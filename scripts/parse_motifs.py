@@ -1,37 +1,39 @@
 import os
 import re
-
+#http://emboss.open-bio.org/rel/dev/apps/patmatmotifs.html
 # file paths
-MOTIFS_FILE = "/home/s2694679/public_html/Website/motifs.txt"
-PARSED_FILE = "/home/s2694679/public_html/Website/motifs_parsed.txt"
+MOTIFS_FILE = "/home/s2694679/public_html/Website/motifs.txt" #raw patmatmotifs file
+PARSED_FILE = "/home/s2694679/public_html/Website/motifs_parsed.txt" #output for parsed file
 
 def parse_motifs():
-    if not os.path.exists(MOTIFS_FILE):
+    if not os.path.exists(MOTIFS_FILE):#check file exists
         print("Error: motifs.txt not found!")
         return
 
     with open(MOTIFS_FILE, "r") as f:
         content = f.readlines()
-
+    #if file is empty, quit early
     if not content:
         print("Error: motifs.txt is empty!")
         return
 
+#temp variables to hold current motif data
     parsed_motifs = []
     current_accession = None
     motif_name = None
     start_pos = None
     end_pos = None
 
-    print("Debug: Parsing motifs.txt ...")
+    print("Debug: Parsing motifs.txt") #debugging step
 
+#loop through every line in the file
     for i in range(len(content)):
         line = content[i].strip()
 
-        #debug print
+        #debugging
         print(f"Line {i}: {line}")
 
-        # get the accession number
+        #get the accession number
         if line.startswith("# Sequence:"):
             match = re.search(r"Sequence:\s+(\S+)", line)
             if match:
@@ -57,7 +59,7 @@ def parse_motifs():
             motif_name = line.split("=")[-1].strip()
             print(f"Motif name: {motif_name}")
 
-        #save the motif data only when all data is found
+        #if and when everything is found, save the parsed motif
         if motif_name and start_pos and end_pos and current_accession:
             parsed_motifs.append(f"{current_accession}|{motif_name}|{start_pos}|{end_pos}")
             print(f"Extracted motif: {current_accession} | {motif_name} | {start_pos} - {end_pos}")

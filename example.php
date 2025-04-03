@@ -25,7 +25,7 @@ MDLLHSNGVLIIQHLQRDYRAYQDFLNFMSHVGDPRNIFSFYFPLWFQLNQVVGTKMIWVAVIGDWFNLIFKWILFGHRP
 MIWVAVIGDWFNLIFKWILFGHRPYWWVHETMIYPNQSSPCLEQFPITCETGPGSPSGHAMGSSCVWYVMVTAALSYTVRWKEKSAVTLHRLMWSLLWTVFWIIQISVCISRVFIATHFPHQVILGVFAGIVVAEAFEHTPAIQTASLRM
 EOF;
 
-#clear old parsed value to avoid errors
+#clear old parsed value to avoid errors #https://www.php.net/manual/en/function.unset.php
 unset($_SESSION['parsed_sequences']);
 
 #redirect to results page as if user submitted this this example!

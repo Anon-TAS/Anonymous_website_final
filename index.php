@@ -8,12 +8,13 @@ require '/home/s2694679/public_html/Website/database/login.php';
 <head>
     <meta charset="UTF-8">
     <title>Protein Sequence Analysis</title>
+    <link rel="icon" href="/~s2694679/Website/images/logo.png" type="image/png">
     <link rel="stylesheet" href="/~s2694679/Website/assets/style.css">
 </head>
 <body>
     <header class="top-bar">
         <div class="logo">
-            <a href="https://www.flaticon.com/free-icons/protein" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.flaticon.com/free-icon/chain_11060555?term=protein&page=1&position=31&origin=tag&related_id=11060555" target="_blank" rel="noopener noreferrer">
                 <img src="images/logo.png" alt="Logo" />
             </a>
         </div>

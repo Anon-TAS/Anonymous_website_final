@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>About This Website</title>
+    <link rel="icon" href="/~s2694679/Website/images/logo.png" type="image/png">
     <link rel="stylesheet" href="/~s2694679/Website/assets/style.css">
 </head>
 <body>
@@ -33,7 +34,7 @@
                     <li>Sequences SQL Table - stores protein name, accession, taxon, query_id and session id.</li>
                     <li>Motif SQL Table - stores accession, motif name, start and end position and session id</li>
                     <li>Query SQL Table - stores query information so the user can revisit previous queries to regenerate analysis </li>
-                    <li><a href="https://github.com/Anon-TAS/Website_Coursework_Anonymous" target="_blank"> GitHub</a> - Want to check out the code? Have a look at the GitHub repository! <strong>NOTE FOR MARKER: Repository anonymous BUT still has my name on it and cannot remove! (kept it in to show the code is shared)</strong> </li>
+                    <li><a href="https://github.com/Anon-TAS/Anonymous_website_final" target="_blank"> GitHub</a> - Want to check out the code? Have a look at the GitHub repository! </li>
                 </ul>
 
                 <h2>&#129514; Demo Dataset</h2>
@@ -48,7 +49,7 @@
                     <li>Python scripts (for fetching sequences, concervation analysis, backend motif analysis and plotting)</li>
                     <li><a href="https://matplotlib.org/" target="_blank"> Matplotlib</a> - used for conservation and matif analysis plots. I did think t use tools like EMBOSS plotcon but I am a lot more familiar with matplotlib, allowing me to have more control of this process.</li>
                     <li><a href="https://www.w3schools.com/xml/ajax_intro.asp" target="_blank"> AJAX</a> to fetch and display sequences dynamically without reloading the page</li>
-                    <li><a href="https://www.chartjs.org/" target="_blank"> Chart.js</a> for cool interactive visualisations</li>
+                    <li><a href="https://www.chartjs.org/" target="_blank"> Chart.js</a> for cool interactive visualisations - <a href="https://cdn.jsdelivr.net/npm/chart.js" target="_blank"> Specific tool used</a></li>
                     <li><a href="https://www.ncbi.nlm.nih.gov/books/NBK25501/" target="_blank"> NCBI Entrez API</a> – Used to dynamically fetch protein sequences based on user-defined queries (protein family, taxonomic group, and limit)</li>
                     <li><a href="https://emboss.sourceforge.net/apps/cvs/emboss/apps/patmatmotifs.html" target="_blank"> EMBOSS patmatmotifs</a> – Command-line tool used for identifying known protein motifs against PROSITE motif database</li>
                     <li><a href="https://biopython-tutorial.readthedocs.io/en/latest/notebooks/14%20-%20Sequence%20motif%20analysis%20using%20Bio.motifs.html" target="_blank"> Biopython</a> - Tool used for For FASTA parsing (SeqIO) and alignment processing (AlignIO)</li>
